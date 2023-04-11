@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  front:
+  app:
     build: .
     volumes:
       - .:/app
     ports:
-      - 8000:3000
+      - 3000:3000
     env_file:
       - .env
     environment:
