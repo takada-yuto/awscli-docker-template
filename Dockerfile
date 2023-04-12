@@ -9,4 +9,6 @@ USER node
 
 WORKDIR /app
 COPY . /app
+
+ENTRYPOINT [ "/app/setup.sh" ]
 CMD ["/bin/bash"]
